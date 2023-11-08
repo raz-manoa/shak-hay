@@ -1,14 +1,13 @@
 import "./globals.scss";
-import ShakHay from "./_components/Icons/ShakHayLogo";
+import Hero from "./sections/hero/section.tsx";
 
 function App() {
 
   return (
     <>
       <div>
-        <ShakHay />
+        <Hero />
       </div>
-      <p className="title">babe</p>
     </>
   );
 }

@@ -7,13 +7,13 @@
   --blue1: #26B6CA;
   --blue5: #C7EFF5;
   --blue6: #F2FBFD;
-  --grey-SH-1: #1A181A;
-  --grey-SH-4: #6A626A;
-  --grey-SH-5: #857A85;
-  --grey-SH-8: #CECACE;
-  --grey-SH-9: #E7E4E7;
-  --grey-SH-10: #F3F2F3;
-  --grey-SH-11: #FAFAFA;
+  --grey-sh-1: #1A181A;
+  --grey-sh-4: #6A626A;
+  --grey-sh-5: #857A85;
+  --grey-sh-8: #CECACE;
+  --grey-sh-9: #E7E4E7;
+  --grey-sh-10: #F3F2F3;
+  --grey-sh-11: #FAFAFA;
   --orange: #F06543;
   --orange95: #FDECE7;
   --purple: #5603AD;
@@ -24,6 +24,6 @@
   --yellow95: #FFF9E5;
 }
 
-.title {
-  @apply text-xl text-black;
+body {
+  font-family: 'Rubik', sans-serif;
 }
