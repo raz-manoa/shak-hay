@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+:root {
+  --blue1: #26B6CA;
+  --blue5: #C7EFF5;
+  --blue6: #F2FBFD;
+  --grey-SH-1: #1A181A;
+  --grey-SH-4: #6A626A;
+  --grey-SH-5: #857A85;
+  --grey-SH-8: #CECACE;
+  --grey-SH-9: #E7E4E7;
+  --grey-SH-10: #F3F2F3;
+  --grey-SH-11: #FAFAFA;
+  --orange: #F06543;
+  --orange95: #FDECE7;
+  --purple: #5603AD;
+  --purple95: #F2E6FF;
+  --red1: #F04D4D;
+  --white: #FFFFFF;
+  --yellow: #FFD23F;
+  --yellow95: #FFF9E5;
+}
+
+.title {
+  @apply text-xl text-black;
+}
