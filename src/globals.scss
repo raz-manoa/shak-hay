@@ -27,3 +27,42 @@
 body {
   font-family: 'Rubik', sans-serif;
 }
+
+//font-size
+.xs {
+  font-size: 16px;
+}
+
+.sm {
+  font-size: 20px;
+}
+
+.md {
+  font-size: 28px;
+}
+
+.lg {
+  font-size: 48px;
+}
+
+//font-weight
+.medium {
+  @apply font-medium;
+}
+
+.bold {
+  @apply font-bold;
+}
+
+//font-color
+.blue {
+  color: var(--blue1);
+}
+
+.greyB {
+  color: var(--grey-sh-1);
+}
+
+.greyL {
+  color: var(--grey-sh-4);
+}
