@@ -1,0 +1,14 @@
+.categ {
+  @apply font-medium text-xs;
+  color: var(--blue1);
+}
+
+.title {
+  @apply font-bold text-5xl;
+  color: var(--grey-sh-1);
+}
+
+.desc {
+  @apply font-bold text-xl;
+  color: var(--grey-sh-4);
+}
