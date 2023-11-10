@@ -1,9 +1,10 @@
+import style from "./Hero.module.scss";
+
 export default function Hero() {
   return (
     <>
-      <div>
+      <div className={style.hero}>
         <div>
-          <h2>Faisons passer votre entreprise au niveau supérieur.</h2>
         </div>
       </div>
     </>
