@@ -1,14 +1,33 @@
+.AppHeading {
+  @apply flex flex-col justify-center;
+  display: flex;
+  flex-direction: column;
+}
+
 .categ {
-  @apply font-medium text-xs;
+  @apply font-normal text-base;
   color: var(--blue1);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
 }
 
 .title {
   @apply font-bold text-5xl;
   color: var(--grey-sh-1);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 16px 0 24px;
+
 }
 
 .desc {
-  @apply font-bold text-xl;
+  @apply font-normal text-xl;
   color: var(--grey-sh-4);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 22px;
 }
