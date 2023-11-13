@@ -1,15 +1,20 @@
 import style from "./Container.module.scss";
-import { Children, ReactNode } from "react";
+import { ReactNode } from "react";
+import classNames from "classnames";
 
 interface ContainerProps {
-  Children?: ReactNode;
+  children?: ReactNode;
+  className?: string;
 }
 
 export default function Container(props: ContainerProps) {
-  const { Children } = props;
+  const { className, children } = props;
   return (
-    <div className={style.container}>
-      {Children}
+    <div className={
+      classNames(
+        className,
+        style.container)}>
+      {children}
     </div>
   )
 };
