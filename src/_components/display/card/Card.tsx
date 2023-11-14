@@ -18,7 +18,7 @@ export default function Card(props: CardProps) {
   const { dataCards, className } = props
 
   return (
-    <div className={classNames(className)}>
+    <div className={classNames(style.content, className)}>
       {dataCards.map((data) => (
         <div className={style.card} key={data.id}>
           <div className={style.Card__img}>
