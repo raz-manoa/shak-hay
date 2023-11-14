@@ -21,13 +21,11 @@ export default function Card(props: CardProps) {
     <div className={classNames(style.content, className)}>
       {dataCards.map((data) => (
         <div className={style.card} key={data.id}>
-          <div className={style.Card__img}>
+          <div className={style.card__img}>
             <img src={data.icon} alt="" />
           </div>
-          <div className={style.Card__title}>
-            <h3>{data.title}</h3>
-            <p>{data.desc}</p>
-          </div>
+          <h3 className={style.card__title}>{data.title}</h3>
+          <p className={style.card__desc}>{data.desc}</p>
         </div>
       ))}
     </div>

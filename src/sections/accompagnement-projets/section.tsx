@@ -18,18 +18,18 @@ export default function Accompagnement() {
   }]
   return (
     <section className={style.accomp}>
-      <div className={style.accomp__head}>
-        <Container>
+      <Container>
+        <div className={style.accomp__head}>
           <AppHeading
-            className={style.accomp__head__app}
             category="Nos services"
             title="Un accompagnement global de votre projet"
             description="Des expertises complémentaires et une approche qui font toute la différence"
           />
-        </Container>
-      </div>
-
-      <Card dataCards={data} />
+        </div>
+        <div className={style.accomp__card}>
+          <Card dataCards={data} />
+        </div>
+      </Container>
     </section>
   )
 }
