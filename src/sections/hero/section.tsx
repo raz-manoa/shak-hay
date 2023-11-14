@@ -1,16 +1,29 @@
 import AppHeading from "../../_components/common/appHeading/AppHeading";
+import Logo from "../../_components/Icons/ShakHayBigLogo"
+import Navigation from "../../_components/display/nav/Nav"
 import Container from "../../_components/common/container/Container";
-import NavBar from "../../_components/common/navBar/NavBar";
 import AppButton from "../../_components/display/button/AppButton";
 import style from "./Hero.module.scss";
 import picCover from "../../assets/developer-activity-animate 1.png";
 
 
 export default function Hero() {
+  const themes = ([
+    { id: 1, label: "Service", href: "#" },
+    { id: 2, label: "Realisation", href: "#" },
+    { id: 3, label: "Contact", href: "#" }
+  ])
   return (
     <section className={style.hero}>
-      <div className={style.hero__header}>
-        <NavBar></NavBar>
+      <div>
+        <Container>
+          <div className={style.hero__header}>
+            <Logo />
+            <Navigation dataNavs={themes}>
+              <AppButton label="Demander un dévis"></AppButton>
+            </Navigation>
+          </div>
+        </Container>
       </div>
       <div className={style.hero__cover}>
         <Container>

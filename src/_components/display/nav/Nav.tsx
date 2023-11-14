@@ -1,22 +1,26 @@
 import { ReactNode, useState } from "react";
 import style from "./Nav.module.scss";
+import classNames from "classnames";
+interface dataNav {
+  id?: number;
+  label?: string;
+  href?: string;
+}
 
 interface NavProps {
+  dataNavs: dataNav[];
   children?: ReactNode;
+  className?: string;
 }
 
 export default function Nav(props: NavProps) {
-  const [themes, setThemes] = useState([
-    { id: 1, label: "Service", href: "#" },
-    { id: 2, label: "Realisation", href: "#" },
-    { id: 3, label: "Contact", href: "#" }
-  ])
-  const { children } = props
+
+  const { dataNavs, children, className } = props
 
   return (
     <nav
-      className={style.nav}
-    >{themes.map((theme) => (
+      className={classNames(style.nav, className)}
+    >{dataNavs.map((theme) => (
       <a
         className={style.a}
         key={theme.id}

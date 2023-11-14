@@ -1,6 +1,7 @@
 import "./globals.scss";
 import Accompagnement from "./sections/accompagnement-projets/section.tsx";
 import Hero from "./sections/hero/section.tsx";
+import Realisation from "./sections/nos-realisations/section.tsx";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Hero />
       <Accompagnement />
+      <Realisation />
     </div>
   );
 }
