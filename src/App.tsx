@@ -1,14 +1,14 @@
 import "./globals.scss";
+import Accompagnement from "./sections/accompagnement-projets/section.tsx";
 import Hero from "./sections/hero/section.tsx";
 
 function App() {
 
   return (
-    <>
-      <div>
-        <Hero />
-      </div>
-    </>
+    <div>
+      <Hero />
+      <Accompagnement />
+    </div>
   );
 }
 

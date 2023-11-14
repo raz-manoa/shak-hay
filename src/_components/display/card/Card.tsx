@@ -1,15 +1,35 @@
+import classNames from "classnames";
 import style from "./Card.module.scss"
 
-export default function Card() {
+interface dataCard {
+  id: number,
+  icon: string;
+  title: string;
+  desc: string;
+}
+
+interface CardProps {
+  dataCards: dataCard[];
+  className?: string;
+
+}
+
+export default function Card(props: CardProps) {
+  const { dataCards, className } = props
+
   return (
-    <div className={style.card}>
-      <div className={style.Card__img}>
-        <img src="" alt="" />
-      </div>
-      <div className={style.Card__title}>
-        <h3>Développement site web</h3>
-        <p>Orci vulputate blandit mollis nunc. Sagittis feugiat posuere fermentum orci scelerisque amet sit ornare. </p>
-      </div>
+    <div className={classNames(className)}>
+      {dataCards.map((data) => (
+        <div className={style.card} key={data.id}>
+          <div className={style.Card__img}>
+            <img src={data.icon} alt="" />
+          </div>
+          <div className={style.Card__title}>
+            <h3>{data.title}</h3>
+            <p>{data.desc}</p>
+          </div>
+        </div>
+      ))}
     </div>
   )
 }
