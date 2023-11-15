@@ -1,0 +1,57 @@
+h2 {
+  @apply font-bold text-sm leading-8;
+  color: var(--white);
+}
+
+p {
+  @apply font-normal text-base;
+  color: var(--white);
+
+}
+
+.cardGallery {
+  @apply grid grid-cols-3 gap-5;
+}
+
+.card {
+  @apply relative;
+  width: 384px;
+  height: 380px;
+
+  &__img {
+    @apply h-full w-auto;
+  }
+
+  &__overlay {
+    @apply absolute flex flex-col items-center h-full w-auto;
+    padding: 24px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--grey-sh-1);
+
+    &__link {
+      @apply flex items-center;
+      opacity: 1;
+      gap: 69px;
+      margin-top: 47%;
+      margin-bottom: auto;
+    }
+
+    &__title {
+      @apply w-full;
+
+      &__desc {
+        @apply flex flex-row gap-4;
+      }
+    }
+  }
+
+  &:hover .card__overlay {
+    opacity: 0.7;
+  }
+
+}
