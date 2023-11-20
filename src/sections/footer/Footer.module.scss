@@ -1,0 +1,22 @@
+p {
+  @apply font-normal text-base;
+  color: var(--grey-sh-10);
+}
+
+a {
+  @apply font-normal text-base;
+  color: var(--grey-sh-10);
+}
+
+.content {
+  padding-top: 72px;
+  padding-bottom: 27px;
+  height: 475px;
+  background: var(--grey-sh-1);
+}
+
+.footer {
+  @apply grid grid-cols-5;
+
+
+}
