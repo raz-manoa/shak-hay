@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 import style from "./Nav.module.scss";
 import classNames from "classnames";
 interface dataNav {

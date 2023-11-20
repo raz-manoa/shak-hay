@@ -2,7 +2,6 @@ import classNames from "classnames";
 import style from "./AppInfo.module.scss";
 
 interface AppInfoProps {
-  id?: number;
   icon?: string;
   label?: string;
   desc?: string;
@@ -10,7 +9,7 @@ interface AppInfoProps {
 }
 
 export default function AppInfo(props: AppInfoProps) {
-  const { id, icon, label, desc, className } = props
+  const { icon, label, desc, className } = props
   return (
     <div className={classNames(style.info, className)}>
       <div className={style.info__icon}>
