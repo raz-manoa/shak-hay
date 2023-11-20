@@ -19,6 +19,39 @@
       border-radius: 3px;
       background: var(--grey-sh-10);
       outline: none;
+      color: var(--grey-sh-4);
+
+      ::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: var(--grey-sh-4);
+      }
+
+      :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: var(--grey-sh-4);
+        opacity: 1;
+      }
+
+      ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: var(--grey-sh-4);
+        opacity: 1;
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--grey-sh-4);
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: var(--grey-sh-4);
+      }
+
+      ::placeholder {
+        /* Most modern browsers support this now. */
+        color: var(--grey-sh-4);
+      }
     }
 
     .textarea {
@@ -28,6 +61,7 @@
       height: 144px;
       border-radius: 3px;
       background: var(--grey-sh-10);
+      color: var(--grey-sh-4);
 
     }
   }
@@ -39,4 +73,14 @@
 
 .btn {
   @apply mt-4;
+}
+
+select {
+  @apply w-full py-[10px];
+  color: var(--grey-sh-4);
+  padding-inline: 17px;
+  outline: none;
+  border-radius: 3px;
+  background: var(--grey-sh-10);
+  padding-right: 10px;
 }

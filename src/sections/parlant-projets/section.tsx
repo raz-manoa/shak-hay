@@ -29,6 +29,10 @@ export default function ParlantProjets() {
             <input type="text" placeholder="Nom" />
             <input type="text" placeholder="Entreprise (Optionnel)" />
             <input type="email" placeholder="Email" />
+            <select>
+              <option value="0">Je voudrais créer un site web</option>
+              <option value="1">Je voudrais créer un appli mobile</option>
+            </select>
             <textarea className={style.textarea} placeholder="Message" />
             <AppButton label="Envoyer" className={style.btn} />
           </form>
