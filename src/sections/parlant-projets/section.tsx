@@ -21,19 +21,17 @@ export default function ParlantProjets() {
             <AppHeading title="Parlons de votre projet" description="Discutons un peu pour réaliser votre business" />
             <div className={style.info}>
               {dataInfos.map((data) => (
-                <AppInfo icon={data.icon} label={data.label} desc={data.desc} />
+                <AppInfo key={data.id} icon={data.icon} label={data.label} desc={data.desc} />
               ))}
             </div>
           </div>
-          <div>
-            <form action="">
-              <input type="text" placeholder="Nom" />
-              <input type="text" placeholder="Entreprise (Optionnel)" />
-              <input type="email" placeholder="Email" />
-              <input type="text" placeholder="Message" />
-              <AppButton label="Envoyer" />
-            </form>
-          </div>
+          <form action="" className={style.parlantProjet__form}>
+            <input type="text" placeholder="Nom" />
+            <input type="text" placeholder="Entreprise (Optionnel)" />
+            <input type="email" placeholder="Email" />
+            <textarea className={style.textarea} placeholder="Message" />
+            <AppButton label="Envoyer" className={style.btn} />
+          </form>
         </div>
       </Container>
     </section>

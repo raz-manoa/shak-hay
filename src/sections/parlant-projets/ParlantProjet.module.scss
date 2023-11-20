@@ -4,11 +4,39 @@
 }
 
 .parlantProjet {
-  @apply flex flex-row gap-5;
+  @apply grid grid-cols-2 gap-5;
 
-  &__coordonne {}
+  &__coordonne {
+    @apply flex flex-col gap-5;
+  }
+
+  &__form {
+    @apply flex flex-col items-start gap-6 pt-4 w-full;
+
+    input {
+      @apply w-full py-[10px];
+      padding-inline: 17px;
+      border-radius: 3px;
+      background: var(--grey-sh-10);
+      outline: none;
+    }
+
+    .textarea {
+      @apply w-full py-[10px];
+      padding-inline: 17px;
+      outline: none;
+      height: 144px;
+      border-radius: 3px;
+      background: var(--grey-sh-10);
+
+    }
+  }
 }
 
 .info {
-  @apply flex flex-col;
+  @apply grid grid-rows-3 gap-9;
+}
+
+.btn {
+  @apply mt-4;
 }

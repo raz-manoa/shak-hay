@@ -25,7 +25,7 @@ export default function Techno() {
       <Container>
         <div className={style.icons}>
           {dataTechno.map((data) => (
-            <img src={data.icon} alt="" />
+            <img key={data.id} src={data.icon} alt="" />
           ))}
         </div>
       </Container>
