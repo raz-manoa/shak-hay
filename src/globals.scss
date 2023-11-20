@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+:root {
+  --blue1: #26B6CA;
+  --blue5: #C7EFF5;
+  --blue6: #F2FBFD;
+  --grey-sh-1: #1A181A;
+  --grey-sh-4: #6A626A;
+  --grey-sh-5: #857A85;
+  --grey-sh-8: #CECACE;
+  --grey-sh-9: #E7E4E7;
+  --grey-sh-10: #F3F2F3;
+  --grey-sh-11: #FAFAFA;
+  --orange: #F06543;
+  --orange95: #FDECE7;
+  --purple: #5603AD;
+  --purple95: #F2E6FF;
+  --red1: #F04D4D;
+  --white: #FFFFFF;
+  --yellow: #FFD23F;
+  --yellow95: #FFF9E5;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+//font-size
+.xs {
+  font-size: 16px;
+}
+
+.sm {
+  font-size: 20px;
+}
+
+.md {
+  font-size: 28px;
+}
+
+.lg {
+  font-size: 48px;
+}
+
+//font-weight
+.medium {
+  @apply font-medium;
+}
+
+.bold {
+  @apply font-bold;
+}
+
+//font-color
+.blue {
+  color: var(--blue1);
+}
+
+.greyB {
+  color: var(--grey-sh-1);
+}
+
+.greyL {
+  color: var(--grey-sh-4);
+}

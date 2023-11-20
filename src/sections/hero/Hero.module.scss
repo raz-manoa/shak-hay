@@ -1,0 +1,31 @@
+.hero {
+  @apply flex flex-col h-screen relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F2FBFD 100%);
+
+
+  &__header {
+    @apply flex flex-row justify-between items-center;
+    padding: 14px 0;
+  }
+
+  &__cover {
+    height: 90vh;
+
+    &__title {
+      margin-top: 192px;
+      max-width: 590px;
+    }
+
+    &__picCover {
+      position: absolute;
+      top: 64px;
+      right: -20px;
+    }
+  }
+
+  &__ellipse {
+    @apply absolute;
+    top: 56.1px;
+    left: opx;
+  }
+}
