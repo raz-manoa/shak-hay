@@ -24,8 +24,10 @@ export default function Card(props: CardProps) {
           <div className={style.card__img}>
             <img src={data.icon} alt="" />
           </div>
-          <h3 className={style.card__title}>{data.title}</h3>
-          <p className={style.card__desc}>{data.desc}</p>
+          <div className={style.card__info}>
+            <h3 className={style.card__info__title}>{data.title}</h3>
+            <p className={style.card__info__desc}>{data.desc}</p>
+          </div>
         </div>
       ))}
     </div>

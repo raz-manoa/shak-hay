@@ -12,16 +12,21 @@
     max-width: 102px;
   }
 
-  &__title {
-    @apply font-bold;
-    font-size: 28px;
-    margin-top: 38px;
-    margin-bottom: 16px;
-    color: var(--grey-sh-1);
-  }
+  &__info {
+    @apply flex flex-col justify-between;
 
-  &__desc {
-    @apply font-normal text-base;
-    color: var(--grey-sh-4);
+    &__title {
+      @apply font-bold;
+      height: 79px;
+      font-size: 28px;
+      margin-top: 38px;
+      margin-bottom: 16px;
+      color: var(--grey-sh-1);
+    }
+
+    &__desc {
+      @apply font-normal text-base;
+      color: var(--grey-sh-4);
+    }
   }
 }
