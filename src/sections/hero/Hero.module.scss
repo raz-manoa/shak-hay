@@ -22,4 +22,10 @@
       right: -20px;
     }
   }
+
+  &__ellipse {
+    @apply absolute;
+    top: 56.1px;
+    left: opx;
+  }
 }

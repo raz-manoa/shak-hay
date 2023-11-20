@@ -5,6 +5,7 @@ import Container from "../../_components/common/container/Container";
 import AppButton from "../../_components/display/button/AppButton";
 import style from "./Hero.module.scss";
 import picCover from "../../assets/developer-activity-animate 1.png";
+import ellipse from "../../assets/Mask Group.png"
 
 
 export default function Hero() {
@@ -38,6 +39,7 @@ export default function Hero() {
           </AppHeading>
         </Container>
         <img className={style.hero__cover__picCover} src={picCover} alt="cover" />
+        <img className={style.hero__ellipse} src={ellipse} alt="ellipse" />
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
 .realisation {
+  @apply relative;
   padding-top: 91px;
   padding-bottom: 46px;
   background-color: var(--grey-sh-11);
@@ -10,6 +11,12 @@
   &__gallery {
     @apply flex flex-col items-center;
     margin-top: 88px;
+  }
+
+  &__ellipse {
+    @apply absolute;
+    top: -237px;
+    right: 0px
   }
 }
 

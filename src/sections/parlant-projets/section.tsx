@@ -9,7 +9,7 @@ import AppButton from "../../_components/display/button/AppButton";
 
 export default function ParlantProjets() {
   const dataInfos = ([
-    { id: 1, icon: Maps, label: "Notre adresse", desc: "Lot IVH 24 Ambohimangakely <br/> Antananarivo 101 - MADAGASCAR" },
+    { id: 1, icon: Maps, label: "Notre adresse", desc: "Lot IVH 24 Ambohimangakely Antananarivo 101 - MADAGASCAR" },
     { id: 2, icon: Phone, label: "Notre contact", desc: "+261 34 85 963 00" },
     { id: 3, icon: Mail, label: "Notre email", desc: "contact@shak-hay.com" }
   ])

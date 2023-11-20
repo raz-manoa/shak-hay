@@ -9,6 +9,7 @@ import picGallery4 from "../../assets/galery4.png";
 import picGallery5 from "../../assets/galery5.png";
 import picGallery6 from "../../assets/galery6.png";
 import CardGallery from "../../_components/display/cardGallery/CardGallery";
+import ellipse from "../../assets/Mask Group (1).png"
 
 
 export default function Realisation() {
@@ -40,6 +41,7 @@ export default function Realisation() {
           <a href="#" className={style.seeMore}>Afficher plus</a>
         </div>
       </Container>
+      <img className={style.realisation__ellipse} src={ellipse} alt="" />
     </section>
   )
 }
