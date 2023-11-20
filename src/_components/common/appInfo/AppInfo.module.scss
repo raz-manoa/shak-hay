@@ -1,0 +1,24 @@
+.info {
+  @apply flex flex-row items-start gap-4;
+
+  h3 {
+    @apply font-bold text-xl;
+    color: var(--grey-sh-1)
+  }
+
+  p {
+    @apply font-normal text-base;
+    color: var(--grey-sh-4)
+  }
+
+  &__icon {
+    @apply flex items-center justify-center rounded-full;
+    width: 44px;
+    height: 44px;
+    background-color: var(--blue6);
+  }
+
+  &__title {
+    @apply flex flex-col gap-3 items-start;
+  }
+}

@@ -1,0 +1,86 @@
+.parlantContent {
+  padding-top: 122px;
+  padding-bottom: 145px;
+}
+
+.parlantProjet {
+  @apply grid grid-cols-2 gap-5;
+
+  &__coordonne {
+    @apply flex flex-col gap-5;
+  }
+
+  &__form {
+    @apply flex flex-col items-start gap-6 pt-4 w-full;
+
+    input {
+      @apply w-full py-[10px];
+      padding-inline: 17px;
+      border-radius: 3px;
+      background: var(--grey-sh-10);
+      outline: none;
+      color: var(--grey-sh-4);
+
+      ::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: var(--grey-sh-4);
+      }
+
+      :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: var(--grey-sh-4);
+        opacity: 1;
+      }
+
+      ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: var(--grey-sh-4);
+        opacity: 1;
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--grey-sh-4);
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: var(--grey-sh-4);
+      }
+
+      ::placeholder {
+        /* Most modern browsers support this now. */
+        color: var(--grey-sh-4);
+      }
+    }
+
+    .textarea {
+      @apply w-full py-[10px];
+      padding-inline: 17px;
+      outline: none;
+      height: 144px;
+      border-radius: 3px;
+      background: var(--grey-sh-10);
+      color: var(--grey-sh-4);
+
+    }
+  }
+}
+
+.info {
+  @apply grid grid-rows-3 gap-9;
+}
+
+.btn {
+  @apply mt-4;
+}
+
+select {
+  @apply w-full py-[10px];
+  color: var(--grey-sh-4);
+  padding-inline: 17px;
+  outline: none;
+  border-radius: 3px;
+  background: var(--grey-sh-10);
+  padding-right: 10px;
+}

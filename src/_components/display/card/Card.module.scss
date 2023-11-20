@@ -1,0 +1,32 @@
+.content {
+  @apply flex grid-cols-3 gap-5;
+}
+
+.card {
+  padding: 26px 28px 24px 24px;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 20px 40px 0px #F3F2F3;
+
+  &__img {
+    max-width: 102px;
+  }
+
+  &__info {
+    @apply flex flex-col justify-between;
+
+    &__title {
+      @apply font-bold;
+      height: 79px;
+      font-size: 28px;
+      margin-top: 38px;
+      margin-bottom: 16px;
+      color: var(--grey-sh-1);
+    }
+
+    &__desc {
+      @apply font-normal text-base;
+      color: var(--grey-sh-4);
+    }
+  }
+}
