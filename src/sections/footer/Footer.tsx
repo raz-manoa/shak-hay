@@ -16,7 +16,7 @@ export default function Footer() {
             <div className={style.footer__resume__logo}>
               <img src={logo} alt="" />
             </div>
-            <p>Shak-Hay est une agence Web basée à Madagascar, spécialisée dans le marketing numérique, la conception de sites Web et le développement applicatif. </p>
+            <p>Shak-Hay est une agence Web basée à Madagascar,<br />spécialisée dans le marketing numérique, la conception de<br />sites Web et le développement applicatif. </p>
             <div className={style.footer__resume__linkLogos}>
               <a href="#"><Facebook /></a>
               <a href="#"><Linkedin /></a>
@@ -24,20 +24,21 @@ export default function Footer() {
               <a href="#"><Twitter /></a>
             </div>
           </div>
-
-          <nav className={style.footer__page}>
+          <div className={style.footer__page}>
             <h3>Page</h3>
-            <a href="#">Service</a>
-            <a href="#">Realisation</a>
-            <a href="#">Contact</a>
-          </nav>
+            <nav >
+              <a href="#">Service</a>
+              <a href="#">Realisation</a>
+              <a href="#">Contact</a>
+            </nav>
+          </div>
 
           <div className={style.footer__contact}>
             <h3>Contacts</h3>
-            <p>Lot IVH 24 Ambohimangakely
-              Antananarivo 101
-              MADAGASCAR</p>
-            <p>+261 34 85 963 00</p>
+            <div className={style.footer__contact__desc}>
+              <p>Lot IVH 24 Ambohimangakely <br /> Antananarivo 101 <br /> MADAGASCAR</p>
+              <p>+261 34 85 963 00</p>
+            </div>
           </div>
 
           <div>

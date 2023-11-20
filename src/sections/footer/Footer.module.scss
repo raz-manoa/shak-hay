@@ -1,13 +1,3 @@
-p {
-  @apply font-normal text-base;
-  color: var(--grey-sh-10);
-}
-
-a {
-  @apply font-normal text-base;
-  color: var(--grey-sh-10);
-}
-
 .content {
   padding-top: 72px;
   padding-bottom: 27px;
@@ -17,6 +7,54 @@ a {
 
 .footer {
   @apply grid grid-cols-5;
+  margin-bottom: 132px;
+
+  p {
+    @apply font-normal text-base;
+    color: var(--grey-sh-10);
+  }
+
+  a {
+    @apply font-normal text-base;
+    color: var(--grey-sh-10);
+  }
+
+  h3 {
+    @apply font-bold text-base mb-4;
+    color: var(--grey-sh-10);
+  }
+
+  &__resume {
+    @apply col-span-2;
+
+    &__logo {
+      margin-bottom: 48px;
+    }
+
+    &__linkLogos {
+      @apply flex flex-row items-center;
+      margin-top: 18px;
+      gap: 43px;
+    }
+  }
 
 
+  &__page {
+    @apply flex flex-col;
+
+
+    nav {
+      @apply flex flex-col items-start;
+      gap: 24px;
+    }
+  }
+
+  &__contact {
+    @apply flex flex-col;
+
+    &__desc {
+      @apply flex flex-col items-start;
+      gap: 24px;
+    }
+  }
 }
