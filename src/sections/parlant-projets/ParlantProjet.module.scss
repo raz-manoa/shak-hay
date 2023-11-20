@@ -1,0 +1,14 @@
+.parlantContent {
+  padding-top: 122px;
+  padding-bottom: 145px;
+}
+
+.parlantProjet {
+  @apply flex flex-row gap-5;
+
+  &__coordonne {}
+}
+
+.info {
+  @apply flex flex-col;
+}
